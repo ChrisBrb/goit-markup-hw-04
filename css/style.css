@@ -193,6 +193,16 @@ ul {
 .feauture .item + .item {
   margin-left: 30px;
 }
+.antena, .diagram, .clock, .astronaut {
+  background: #F5F4FA;
+  border-radius: 4px;
+  outline: 1px solid red;
+  background-size: contain;
+  width: 270px;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+}
 
 .work-item {
   display: flex;
