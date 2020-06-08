@@ -48,7 +48,7 @@ ul {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid black; */
+  outline: 1px solid black;
 }
 
 .display-block {
@@ -94,21 +94,50 @@ ul {
 /* contacts */
 .contacts {
   display: flex;
-  align-items: center;
-  margin-left: auto;
+  margin-left: 304px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 0;
 }
-.contacts .item + .item {
+
+.contacts .mailto + .number {
   margin-left: 30px;
 }
 .contacts .contacts-list {
   color: var(--primary-text-color);
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .contacts .contacts-list:hover,
 .contacts .contacts-list:focus {
   color: var(--accent-text-color);
 }
+
+.contacts .mailto::before {
+  content: url(../img/envelope.svg);
+  background-size: contain;
+  display: inline-flex;
+  background-repeat: no-repeat;
+}
+.mailto:hover::before {
+
+}
+
+.number::before {
+  content: url(../img/phone-icon.svg);
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.number:hover::before {
+
+}
+
+
+
 /* hero */
 .hero {
   text-align: center;
@@ -259,6 +288,8 @@ margin-left: 10px;
   box-sizing: border-box;
   border-radius: 4px;
   background: var(--primary-white-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 .space a:hover,
 .space a:focus {
@@ -337,6 +368,7 @@ margin-left: 10px;
 .footer .address {
   margin-top: 0px;
   margin-bottom: 0px;
+  width: 231px;
   font-style: 400px;
   font-size: 14px;
   line-height: 1.71;
@@ -356,10 +388,10 @@ margin-left: 10px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.item .number {
-  text-decoration: none;
+.item .phone {
   font-family: Roboto;
   font-style: normal;
+  text-decoration: none;
   font-size: 14px;
   line-height: 1,71;
   letter-spacing: 0.03em;
@@ -384,7 +416,7 @@ margin-left: 10px;
   margin-top: 10px;
 }
 .join-us {
-  margin-left: 148px;
+  margin-left: 68px;
 }
 
 .join-us .social-links {
@@ -406,19 +438,61 @@ margin-left: 10px;
 /* button */
 .button {
   color: var(--primary-white-color);
-  background-color: var(--accent-text-color);
   text-decoration: none;
   border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  min-width: 200px;
+}
+.button.buy {
+  width: 200px;
+  left: 700px;
+  top: 430px;
+  background-color: var(--accent-text-color);
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 46px;
   text-align: center;
-  margin-right: 8px;
+}
+.button.mail {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 12px;
+  padding-right: auto;
+  margin-right: 12px;
+ 
+  font-size: 16px;
+  line-height: 1,87;
+  display: inline-block;
+  text-align: left;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.button.send {
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 62px;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-image: url("../img/icon-send.svg");
+  background-color: var(--accent-text-color);
+  background-repeat: no-repeat;
+  background-position: 148px 13px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .copy {
