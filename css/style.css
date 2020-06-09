@@ -93,12 +93,12 @@ ul {
 }
 /* contacts */
 .contacts {
-  display: flex;
-  margin-left: 304px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  padding-left: 0;
 }
 
 .contacts .mailto + .number {
@@ -107,7 +107,6 @@ ul {
 .contacts .contacts-list {
   color: var(--primary-text-color);
   text-decoration: none;
-  margin-left: 10px;
 }
 
 .contacts .contacts-list:hover,
@@ -117,26 +116,21 @@ ul {
 
 .contacts .mailto::before {
   content: url(../img/envelope.svg);
-  background-size: contain;
-  display: inline-flex;
+  display: inline-flexbox;
   background-repeat: no-repeat;
-}
-.mailto:hover::before {
-
+  background-position: 16 12;
+  margin-right: 10px;
+  text-align: center;
 }
 
 .number::before {
   content: url(../img/phone-icon.svg);
-  background-size: contain;
-  display: inline-block;
+  display: inline-flexbox;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 10 16;
+  margin-right: 10px;
+  text-align: center;
 }
-.number:hover::before {
-
-}
-
-
 
 /* hero */
 .hero {
@@ -159,6 +153,9 @@ ul {
 /* feauture */
 .feauture {
   display: flex;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0;
 }
 .feauture > .container {
   margin-top: 94px;
@@ -166,13 +163,18 @@ ul {
   display: flex;
   justify-content: center;
 }
+
 .feauture .list {
   display: flex;
+}
+.feauture .list {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
 }
 .feauture .title {
   color: var(--title-text-color);
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -190,19 +192,35 @@ ul {
   display: block;
   width: calc((100%-90%) / 4);
 }
-.feauture .item + .item {
+.list-item + .list-item {
   margin-left: 30px;
 }
-.antena, .diagram, .clock, .astronaut {
-  background: #F5F4FA;
-  border-radius: 4px;
-  outline: 1px solid red;
-  background-size: contain;
-  width: 270px;
+.list-item::before {
+  display: block;
+  content: '';
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: 70px;
+  outline: 1px solid;
+  margin-top: 0;
+
 }
+
+.list-item:nth-child(1)::before {
+  background-image: url(../img/svg-link/antenna.svg);
+}
+.list-item:nth-child(2)::before {
+  background-image: url(../img/svg-link/clock.svg);
+}
+.list-item:nth-child(3)::before {
+  background-image: url(../img/svg-link/diagram.svg);
+}
+.list-item:nth-child(4)::before {
+background-image: url(../img/svg-link/astronaut.svg);
+} 
 
 .work-item {
   display: flex;
