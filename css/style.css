@@ -332,7 +332,7 @@ margin-left: 10px;
 }
 .team .space + .space {
   margin-left: 30px;
-}
+} 
 .space {
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
@@ -341,8 +341,8 @@ margin-left: 10px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
-.space a:hover,
-.space a:focus {
+.space a:hover {
+  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -373,6 +373,10 @@ margin-left: 10px;
   margin-left: 30px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.clients .list:first-child {
+  margin-left: 30px;
 }
 
 .clients .list {
@@ -519,6 +523,7 @@ margin-left: 10px;
   border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 .button.buy {
   width: 200px;
@@ -530,6 +535,7 @@ margin-left: 10px;
   padding-left: 32px;
   padding-right: 32px;
   text-align: center;
+  cursor: pointer;
 }
 .button.mail {
   padding-top: 18px;
@@ -552,6 +558,7 @@ margin-left: 10px;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 .button.send {
   padding-top: 14px;
@@ -569,6 +576,7 @@ margin-left: 10px;
   background-position: 148px 13px;
   font-weight: 700;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .copy {
@@ -634,6 +642,7 @@ margin-left: 10px;
   width: 1230px;
   display: flex;
   flex-wrap: wrap;
+
 }
 .flex-element {
   width: 380px;
