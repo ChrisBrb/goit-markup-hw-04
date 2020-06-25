@@ -283,6 +283,9 @@ background-image: url(../img/svg-link/astronaut.svg);
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.name {
+  display: block;
+}
 .team .team-list {
   margin-top: 0;
   margin-bottom: 0;
@@ -398,6 +401,7 @@ margin-left: 10px;
   background: #2f303a;
   height: 253px;
 }
+
 .logo-footer {
   color: var(--accent-text-color);
   font-family: Raleway, sans-serif;
@@ -417,7 +421,9 @@ margin-left: 10px;
 }
 
 .footer-main {
-  margin-top: 45px;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  margin-top: 0;
   align-items: flex-start;
 }
 
@@ -427,7 +433,8 @@ margin-left: 10px;
 }
 
 .footer .title {
-  margin-top: 54px;
+  padding-top: 54px;
+  margin-top: 0;
   margin-bottom: 20px;
   color: var(--primary-white-color);
   font-weight: 700;
@@ -587,6 +594,9 @@ margin-left: 10px;
 }
 .filter .button {
   margin-top: 0;
+  margin-right: 8px;
+  background: #F5F4FA;
+  border-radius: 4px;
 }
 .filter .button:hover,
 .filter .button:focus {
@@ -596,6 +606,8 @@ margin-left: 10px;
 
 
 .flex-element .title {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -603,6 +615,8 @@ margin-left: 10px;
 }
 
 .flex-element .text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -615,10 +629,11 @@ margin-left: 10px;
 
 .flex-container {
   padding-left: 0;
+  padding-top: 50px;
+  padding-bottom: 94px;
   width: 1230px;
   display: flex;
   flex-wrap: wrap;
-  margin: 15px;
 }
 .flex-element {
   width: 380px;
@@ -632,5 +647,4 @@ margin-left: 10px;
   text-decoration: none;
 }
 .portfolio-section {
-  margin-bottom: 94px;
 }
