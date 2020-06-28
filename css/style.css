@@ -317,31 +317,38 @@ background-image: url(../img/svg-link/astronaut.svg);
 .social-link {
 margin: 0;
 padding: 0;
-
 }
 
 .social-icon {
   width: 22px;
   height: 22px;
   fill: var(--primary-text-color);
-  
 }
 
 .social:hover {
- display: block;
+  padding-top: 10px;
+  display: block;
   border-radius: 50%;
   background-color: var(--accent-text-color);
-  fill: currentColor;
+  fill: var(--primary-white-color)
 }
+
+.social-icon:hover {
+  fill: var(--primary-white-color);
+}
+
 .team .social:not(:first-child) {
 margin-left: 10px;
 }
+
 .team .social + .social {
-  margin-left: 36px;
+  margin-left: 10px;
 }
+
 .team .space + .space {
   margin-left: 30px;
 } 
+
 .space {
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
@@ -507,9 +514,11 @@ margin-left: 10px;
 .footer .tttt {
   margin: 0;
   padding: 0;
+  padding-top: 12px;
   width: 44px;
   height: 44px;
-  /* background-color: teal; */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
 }
