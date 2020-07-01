@@ -703,12 +703,12 @@ fill: var(--accent-text-color);
 }
 .filter .button:not(:last-child) {
   margin-right: 8px;
-} {
   margin-top: 0;
   margin-right: 8px;
   background: #f5f4fa;
   border-radius: 4px;
 }
+
 .filter .button:hover,
 .filter .button:focus {
   background-color: var(--accent-text-color);
