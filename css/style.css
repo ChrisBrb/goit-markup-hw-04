@@ -701,11 +701,13 @@ fill: var(--accent-text-color);
   justify-content: center;
   padding: 6px;
 }
+.filter .button {
+  background-color: #F5F4FA;
+}
 .filter .button:not(:last-child) {
   margin-right: 8px;
   margin-top: 0;
   margin-right: 8px;
-  background-color: #F5F4FA;
   border-radius: 4px;
 }
 
