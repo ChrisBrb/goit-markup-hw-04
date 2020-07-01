@@ -50,7 +50,7 @@ ul {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 
 .display-block {
@@ -705,7 +705,7 @@ fill: var(--accent-text-color);
   margin-right: 8px;
   margin-top: 0;
   margin-right: 8px;
-  background: #f5f4fa;
+  background-color: #F5F4FA;
   border-radius: 4px;
 }
 
