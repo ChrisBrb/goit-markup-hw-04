@@ -169,12 +169,11 @@ fill: var(--accent-text-color);
   url('../img/header-img.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   text-align: center;
 }
 
 .overlay > .container {
-  max-width: 1600px;
+  width: 1600px;
   height: 600px;
   padding-top: 118px;
   padding-bottom: 118px;
